@@ -1,0 +1,24 @@
+--- 
+layout: base-layout.njk 
+---
+
+<div class="container py-4">
+    <div class="col-8 mx-auto border-0">
+        <div class="p-3 mb-3 border-left font-italic font-source-serif-pro" role="alert">
+            Please send us a message using the contact form below and someone will be in contact shortly with details about ordering a shirt!
+        </div>
+        <form action="https://formspree.io/xnqbbpoa" method="POST">
+            <div class="form-group font-source-serif-pro">
+                <label for="InputEmail">Email Address</label>
+                <input type="email" class="form-control" name="_replyto" id="InputEmail" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="InputMessage">Message</label>
+                <textarea class="form-control" id="InputMessage" rows="3" name="message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-outline-dark text-dark-purple font-libre-frank">Send</button>
+        </form>
+    </div>
+    
+</div>
