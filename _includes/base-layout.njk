@@ -11,26 +11,46 @@
     <link rel="stylesheet" href="/static/css/styles.css">
 </head>
 
-<body class="font-source-serif-pro">
-    <nav class="navbar navbar-dark navbar-expand-md" style="background-color: #474165;">
-        <div class="container">
-            <a class="navbar-brand text-white font-libre-frank-300" href="/">COVID-19 Mask Force</a>
-            <button class="navbar-toggler text-white border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto font-libre-frank-300">
-                    <a class="nav-item nav-link text-light ml-auto" href="/">Home</a>
-                    <a class="nav-item nav-link text-light ml-auto" href="/contact">Contact</a>
-                    <a class="nav-item nav-link text-light ml-auto" href="/t-shirts">T-shirts</a>
+<body class="d-flex flex-column min-vh-100 font-source-serif-pro">
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-md" style="background-color: #474165;">
+            <div class="container">
+                <a class="navbar-brand text-white font-libre-frank-300" href="/">COVID-19 Mask Force</a>
+                <button class="navbar-toggler text-white border-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto font-libre-frank-300">
+                        <a class="nav-item nav-link text-light ml-auto" href="/">Home</a>
+                        <a class="nav-item nav-link text-light ml-auto" href="/contact">Contact</a>
+                        <a class="nav-item nav-link text-light ml-auto" href="/t-shirts">T-shirts</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
     
-    <main>
+    <main class="flex-shrink-0">
         {{ content|safe }}
     </main>
+
+    <footer class="footer mt-auto bg-light text-dark-purple">
+        <div class="container d-flex align-items-center py-3">
+            <h5>
+                <svg class="bi bi-tools mb-n1" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M0 1l1-1 3.081 2.2a1 1 0 01.419.815v.07a1 1 0 00.293.708L10.5 9.5l.914-.305a1 1 0 011.023.242l3.356 3.356a1 1 0 010 1.414l-1.586 1.586a1 1 0 01-1.414 0l-3.356-3.356a1 1 0 01-.242-1.023L9.5 10.5 3.793 4.793a1 1 0 00-.707-.293h-.071a1 1 0 01-.814-.419L0 1zm11.354 9.646a.5.5 0 00-.708.708l3 3a.5.5 0 00.708-.708l-3-3z" clip-rule="evenodd"/>
+                <path fill-rule="evenodd" d="M15.898 2.223a3.003 3.003 0 01-3.679 3.674L5.878 12.15a3 3 0 11-2.027-2.027l6.252-6.341A3 3 0 0113.778.1l-2.142 2.142L12 4l1.757.364 2.141-2.141zm-13.37 9.019L3.001 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z" clip-rule="evenodd"/>
+                </svg>
+            </h5>
+            <p class="mb-0 px-3">
+                Made by Farley Reynolds.  Please 
+                <a class="font-libre-frank text-dark-purple" href="https://farleykreynolds.com" target="_blank">
+                    <u>reach out</u>
+                </a> 
+                if you need a website!
+            </p>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
